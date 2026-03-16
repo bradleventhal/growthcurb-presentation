@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrowthCurb Board Presentation — March 15, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#070b14;--panel:#0f172a;--panel2:#111b33;--line:#2a436d;--text:#f8fafc;--muted:#9fb0c8;--teal:#14b8a6;--cyan:#67e8f9;--rose:#fb7185;--amber:#f59e0b;}
+    *{box-sizing:border-box} html,body{margin:0;padding:0;background:radial-gradient(1000px 500px at 20% -10%,#1b2a4a 0,var(--bg) 60%);color:var(--text);font-family:Inter,system-ui,sans-serif;scroll-behavior:smooth}
+    .deck{scroll-snap-type:y mandatory;overflow-y:auto;height:100vh}
+    .slide{min-height:100vh;scroll-snap-align:start;padding:30px 20px 34px;display:flex;flex-direction:column;justify-content:center;gap:14px;opacity:0;transform:translateY(16px);animation:in .6s ease forwards}
+    @keyframes in{to{opacity:1;transform:none}}
+    .wrap{width:min(1100px,100%);margin:0 auto}
+    h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;margin:0}
+    h1{font-size:clamp(2rem,6vw,3rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem);color:var(--cyan)} h3{font-size:1.02rem;color:#d9e8ff}
+    p,li{font-size:clamp(.95rem,2.2vw,1.05rem);line-height:1.55;margin:0}
+    .muted{color:var(--muted)} .kicker{color:var(--teal);font-weight:800;letter-spacing:.7px;text-transform:uppercase;font-size:.78rem}
+    .grid{display:grid;gap:12px}.two{grid-template-columns:1fr}.three{grid-template-columns:1fr}
+    @media(min-width:760px){.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}}
+    .card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:0 12px 30px rgba(2,7,18,.35)}
+    .metric{font-size:1.65rem;font-weight:800;color:var(--cyan)}
+    .badge{display:inline-block;padding:4px 9px;border-radius:999px;font-size:.73rem;font-weight:800}
+    .good{background:#0f3a31;color:#99f6e4;border:1px solid #0f766e}
+    .warn{background:#412b0f;color:#fcd34d;border:1px solid #92400e}
+    table{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+    th,td{padding:10px;border-bottom:1px solid #24395e;text-align:left;font-size:.92rem}
+    th{background:#0d1a33;color:#cde3ff}
+    tr:last-child td{border-bottom:none}
+    a{color:#7dd3fc}
+    .footer{position:fixed;right:12px;bottom:8px;font-size:.72rem;color:#86a2c7;opacity:.8}
+  </style>
+</head>
+<body>
+<div class="deck">
+
+<section class="slide"><div class="wrap">
+  <div class="kicker">Board Presentation</div>
+  <h1>GrowthCurb — Board Presentation<br/>March 15, 2026</h1>
+  <p class="muted">CEO Briefing • North Fulton Launch + Platform Readiness • 10:00 PM ET</p>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>1) What We Built Today</h2>
+  <div class="grid three">
+    <div class="card"><div class="metric">58</div><p>GrowthCurb state artifacts produced/revised today (GROWTHCURB_* set)</p></div>
+    <div class="card"><div class="metric">12</div><p>Board-grade deck sections finalized for executive narrative</p></div>
+    <div class="card"><div class="metric">4</div><p>Launch assets live (site, pitch, templates, operator docs)</p></div>
+  </div>
+  <p class="muted">Build scope covered product, pricing, finance, GTM, operations, legal/comms templates, and launch-ready sales content.</p>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>2) The Product — Full Service Stack</h2>
+  <div class="grid two">
+    <div class="card"><h3>Core engine</h3><ul><li>Conversion-first websites</li><li>Local SEO structure + map visibility</li><li>Review capture + trust loops</li><li>Order/booking conversion flows</li><li>Paid acquisition alignment</li></ul></div>
+    <div class="card"><h3>Operator promise</h3><ul><li>One accountable team, not fragmented vendors</li><li>Monthly optimization cadence</li><li>Metrics tied to calls/bookings/revenue</li><li>Flexible packaging by vertical and readiness</li></ul></div>
+  </div>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>3) The Market — North Fulton, GA</h2>
+  <div class="grid three">
+    <div class="card"><div class="metric">~285k</div><p>Population across Alpharetta, Roswell, Johns Creek, Milton</p></div>
+    <div class="card"><div class="metric">625–1075</div><p>Addressable businesses in initial service mix (home services + medspa + high-intent local verticals)</p></div>
+    <div class="card"><div class="metric">46%</div><p>Google searches with local intent (demand base we capture)</p></div>
+  </div>
+  <p class="muted">Territory analysis + vertical density confirms immediate launch wedge with high buyer intent and strong unit economics.</p>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>4) Pricing Model — Base + Add-ons (Flexible)</h2>
+  <table>
+    <tr><th>Component</th><th>Price</th><th>Role in Offer</th></tr>
+    <tr><td>Base Website</td><td>$49–$79/mo</td><td>Core web + conversion foundation</td></tr>
+    <tr><td>SEO Add-on</td><td>+$29/mo</td><td>Local discoverability & map intent capture</td></tr>
+    <tr><td>Ordering Add-on</td><td>+$39/mo</td><td>Direct transaction path</td></tr>
+    <tr><td>Reviews Add-on</td><td>+$19/mo</td><td>Trust growth loop</td></tr>
+    <tr><td>Ads Mgmt Add-on</td><td>+$99/mo</td><td>High-intent paid pipeline</td></tr>
+  </table>
+  <p class="muted">Model blend used in financials: base $69 + weighted add-ons = <b>$135.78 ARPU</b> with blended gross margin <b>65.9%</b>.</p>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>5) Competitive Advantage (vs Thryv / Hibu / Scorpion)</h2>
+  <div class="grid three">
+    <div class="card"><h3>GrowthCurb</h3><p>Integrated, flexible stack with transparent pricing and local conversion focus.</p><span class="badge good">Position: agile + outcome-driven</span></div>
+    <div class="card"><h3>Legacy agencies</h3><p>Often expensive, slower cycles, and less flexible packaging for SMB operators.</p><span class="badge warn">Risk: cost + rigidity</span></div>
+    <div class="card"><h3>DIY tools</h3><p>Low software cost, high owner workload, inconsistent execution quality.</p><span class="badge warn">Risk: effort burden</span></div>
+  </div>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>6) Financial Projections — Year 1 Scenarios</h2>
+  <table>
+    <tr><th>Scenario</th><th>Active Clients</th><th>MRR</th><th>Annualized Run-Rate</th></tr>
+    <tr><td>Conservative</td><td>25</td><td>$15,075</td><td>$180,900</td></tr>
+    <tr><td>Moderate</td><td>75</td><td>$46,025</td><td>$552,300</td></tr>
+    <tr><td>Aggressive</td><td>150</td><td>$92,050</td><td>$1,104,600</td></tr>
+  </table>
+  <p class="muted">Source: GROWTHCURB_REVENUE_SCENARIOS.md + GROWTHCURB_FINANCIALS_V3.md (ARPU and margin model).</p>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>7) What’s Ready to Launch (Live Links)</h2>
+  <div class="grid two">
+    <div class="card"><ul>
+      <li><a href="https://bradleventhal.github.io/growthcurb/" target="_blank">GrowthCurb Site</a></li>
+      <li><a href="https://bradleventhal.github.io/growthcurb-pitch/" target="_blank">GrowthCurb Pitch</a></li>
+      <li><a href="https://github.com/bradleventhal/growthcurb-pitch" target="_blank">Pitch Repo</a></li>
+      <li><a href="https://growthcurb.vercel.app/" target="_blank">Web App Surface</a></li>
+      <li><a href="https://calendly.com/growthcurb/north-fulton-launch" target="_blank">Launch Booking CTA</a></li>
+    </ul></div>
+    <div class="card"><p><b>Launch package status:</b></p><ul>
+      <li>Sales deck content complete</li>
+      <li>Social + email content complete</li>
+      <li>Case studies + one-pagers complete</li>
+      <li>Ops, onboarding, pricing, risk docs complete</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>8) 90-Day Plan</h2>
+  <div class="grid three">
+    <div class="card"><h3>0–30 Days</h3><ul><li>Launch North Fulton outbound waves</li><li>Close first 10–15 logos</li><li>Operationalize weekly KPI cadence</li></ul></div>
+    <div class="card"><h3>31–60 Days</h3><ul><li>Scale winning vertical offers</li><li>Tighten fulfillment SLAs</li><li>Increase review and referral loops</li></ul></div>
+    <div class="card"><h3>61–90 Days</h3><ul><li>Expand to adjacent micro-territories</li><li>Add specialist pods for throughput</li><li>Push toward moderate scenario trajectory</li></ul></div>
+  </div>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>9) Risks + Mitigations</h2>
+  <table>
+    <tr><th>Risk</th><th>Impact</th><th>Mitigation</th></tr>
+    <tr><td>Lead quality variance</td><td>Unstable close rates</td><td>Tighter ICP scoring + vertical prioritization</td></tr>
+    <tr><td>Fulfillment bottlenecks</td><td>Churn/reputation risk</td><td>Pod staffing model + SLA controls</td></tr>
+    <tr><td>Overreliance on one channel</td><td>Pipeline volatility</td><td>Balanced SEO + paid + referral motion</td></tr>
+    <tr><td>Pricing pressure</td><td>Margin compression</td><td>Add-on attach strategy + premium outcomes positioning</td></tr>
+  </table>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>10) The Team — 20-Agent Operating Company</h2>
+  <div class="grid two">
+    <div class="card"><ul>
+      <li><b>LeBron:</b> orchestration + executive routing</li>
+      <li><b>Magic:</b> board comms + final packaging</li>
+      <li><b>McVay:</b> strategy + viability calls</li>
+      <li><b>Marino:</b> sales strategy + outbound</li>
+      <li><b>Jokic:</b> research + market intelligence</li>
+      <li><b>Steph:</b> product system design</li>
+      <li><b>Elon:</b> technical architecture</li>
+      <li><b>Ohtani:</b> integrations + automation</li>
+      <li><b>Achane:</b> workflow optimization</li>
+      <li><b>JJettas:</b> financial analytics</li>
+    </ul></div>
+    <div class="card"><ul>
+      <li><b>Brady:</b> QA gate authority</li>
+      <li><b>Wade:</b> second-eyes review</li>
+      <li><b>Saban:</b> lessons propagation</li>
+      <li><b>Mahomes:</b> campaign execution support</li>
+      <li><b>Jimmy:</b> conversion copy + offer messaging</li>
+      <li><b>Kobe:</b> performance standards oversight</li>
+      <li><b>Shaq:</b> stress-test review</li>
+      <li><b>Duncan:</b> process stability support</li>
+      <li><b>Jordan:</b> positioning rigor support</li>
+      <li><b>Bird:</b> narrative refinement support</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>11) Next Steps — Board Decisions Needed Tonight</h2>
+  <div class="grid three">
+    <div class="card"><h3>Decision 1</h3><p>Approve North Fulton launch budget + channel mix for first 90 days.</p></div>
+    <div class="card"><h3>Decision 2</h3><p>Lock pricing architecture (base + add-on model) for go-live.</p></div>
+    <div class="card"><h3>Decision 3</h3><p>Authorize pod hiring plan tied to scenario milestones.</p></div>
+  </div>
+  <p class="muted">If approved tonight, GrowthCurb enters execution mode immediately with weekly board-visible KPI reporting.</p>
+</div></section>
+
+</div>
+<div class="footer">GrowthCurb Board Deck • March 15, 2026</div>
+</body>
+</html>
