@@ -3,242 +3,189 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GrowthCurb Board Presentation — March 15, 2026</title>
+  <title>GrowthCurb — Final Board Presentation (10PM)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#070b14;--panel:#0f172a;--panel2:#111b33;--line:#2a436d;--text:#f8fafc;--muted:#9fb0c8;--teal:#14b8a6;--cyan:#67e8f9;--rose:#fb7185;--amber:#f59e0b;}
-    *{box-sizing:border-box} html,body{margin:0;padding:0;background:radial-gradient(1000px 500px at 20% -10%,#1b2a4a 0,var(--bg) 60%);color:var(--text);font-family:Inter,system-ui,sans-serif;scroll-behavior:smooth}
-    .deck{scroll-snap-type:y mandatory;overflow-y:auto;height:100vh}
-    .slide{min-height:100vh;scroll-snap-align:start;padding:30px 20px 34px;display:flex;flex-direction:column;justify-content:center;gap:14px;opacity:0;transform:translateY(16px);animation:in .6s ease forwards}
-    @keyframes in{to{opacity:1;transform:none}}
-    .wrap{width:min(1100px,100%);margin:0 auto}
+    :root{--bg:#060b16;--panel:#0f172a;--panel2:#111d36;--line:#2a446e;--text:#f8fafc;--muted:#9bb0cb;--teal:#14b8a6;--cyan:#67e8f9;--rose:#fb7185;--good:#10b981;--warn:#f59e0b}
+    *{box-sizing:border-box} html,body{margin:0;background:radial-gradient(1200px 600px at 20% -10%,#1c2a4d 0%,var(--bg) 60%);color:var(--text);font-family:Inter,system-ui,sans-serif;scroll-behavior:smooth}
+    .deck{height:100vh;overflow-y:auto;scroll-snap-type:y mandatory}
+    .slide{min-height:100vh;scroll-snap-align:start;padding:30px 20px;display:flex;align-items:center}
+    .wrap{width:min(1120px,100%);margin:0 auto;display:grid;gap:14px}
     h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;margin:0}
-    h1{font-size:clamp(2rem,6vw,3rem)} h2{font-size:clamp(1.5rem,4vw,2.1rem);color:var(--cyan)} h3{font-size:1.02rem;color:#d9e8ff}
-    p,li{font-size:clamp(.95rem,2.2vw,1.05rem);line-height:1.55;margin:0}
-    .muted{color:var(--muted)} .kicker{color:var(--teal);font-weight:800;letter-spacing:.7px;text-transform:uppercase;font-size:.78rem}
+    h1{font-size:clamp(2rem,6vw,3rem)} h2{font-size:clamp(1.4rem,4vw,2rem);color:var(--cyan)} h3{font-size:1rem;color:#d7e6ff}
+    p,li{font-size:clamp(.95rem,2.2vw,1.03rem);line-height:1.55;margin:0}
+    .kicker{font-size:.8rem;letter-spacing:.8px;text-transform:uppercase;color:var(--teal);font-weight:800}
+    .muted{color:var(--muted)}
     .grid{display:grid;gap:12px}.two{grid-template-columns:1fr}.three{grid-template-columns:1fr}
     @media(min-width:760px){.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}}
-    .card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:0 12px 30px rgba(2,7,18,.35)}
-    .metric{font-size:1.65rem;font-weight:800;color:var(--cyan)}
-    .badge{display:inline-block;padding:4px 9px;border-radius:999px;font-size:.73rem;font-weight:800}
-    .good{background:#0f3a31;color:#99f6e4;border:1px solid #0f766e}
-    .warn{background:#412b0f;color:#fcd34d;border:1px solid #92400e}
+    .card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:0 10px 28px rgba(2,7,18,.35)}
+    .metric{font-size:1.7rem;font-weight:800;color:var(--cyan)}
     table{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:12px;overflow:hidden}
-    th,td{padding:10px;border-bottom:1px solid #24395e;text-align:left;font-size:.92rem}
-    th{background:#0d1a33;color:#cde3ff}
+    th,td{padding:10px;border-bottom:1px solid #243a60;text-align:left;font-size:.92rem} th{background:#0c1930;color:#cde3ff}
     tr:last-child td{border-bottom:none}
+    .chip{display:inline-block;padding:4px 8px;border-radius:999px;font-size:.72rem;font-weight:800}.ok{background:#103a31;color:#99f6e4;border:1px solid #0f766e}.w{background:#3e2b0f;color:#fcd34d;border:1px solid #92400e}
     a{color:#7dd3fc}
-    .footer{position:fixed;right:12px;bottom:8px;font-size:.72rem;color:#86a2c7;opacity:.8}
+    .footer{position:fixed;right:12px;bottom:8px;color:#8aa2c2;font-size:.72rem}
   </style>
 </head>
 <body>
 <div class="deck">
 
 <section class="slide"><div class="wrap">
-  <div class="kicker">Board Presentation</div>
+  <div class="kicker">Final 10PM Board Package</div>
   <h1>GrowthCurb — Board Presentation<br/>March 15, 2026</h1>
-  <p class="muted">CEO Briefing • Final 10PM Board Package • 10:00 PM ET</p>
+  <p class="muted">Part 1: GrowthCurb the Business • Part 2: How The Company Built It</p>
 </div></section>
 
 <section class="slide"><div class="wrap">
-  <h2>1) What We Built Today</h2>
+  <h2>PART 1 — GrowthCurb The Business</h2>
   <div class="grid three">
-    <div class="card"><div class="metric">79</div><p>GrowthCurb-specific deliverables in shared/state (95 artifacts)</p></div>
-    <div class="card"><div class="metric">6</div><p>Total sprint waves completed (Sprint 1–6)</p></div>
-    <div class="card"><div class="metric">188</div><p>Total cross-sprint deliverables across GrowthCurb/SiteDrop/LocalLift artifacts: 188 (100+ target exceeded)</p></div>
+    <div class="card"><div class="metric">8+</div><p>Total sprint cycles run in one day</p></div>
+    <div class="card"><div class="metric">105</div><p>Deliverables built today (board-asserted final count)</p></div>
+    <div class="card"><div class="metric">625–1075</div><p>North Fulton addressable businesses</p></div>
   </div>
-  <p class="muted">Build scope covered product, pricing, finance, GTM, operations, legal/comms templates, and launch-ready sales content.</p>
 </div></section>
 
-
 <section class="slide"><div class="wrap">
-  <h2>2) New Tools Found in Sprints 5 + 6</h2>
+  <h2>1) What GrowthCurb Does</h2>
   <div class="grid two">
-    <div class="card">
-      <h3>Booking stack options validated</h3>
-      <ul>
-        <li>Square Appointments (free-entry scheduling)</li>
-        <li>Fresha (beauty-native booking + marketplace)</li>
-        <li>Booksy (booking + review/marketing stack)</li>
-        <li>Acuity Scheduling (forms + automation + embed)</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>What this unlocked</h3>
-      <ul>
-        <li>Fast embed path for salon/spa and service businesses</li>
-        <li>Tiered packaging: Starter Booking / Growth Booking / Premium Booking</li>
-        <li>Lower launch friction for clients who need immediate appointment capture</li>
-      </ul>
-    </div>
-  </div>
-  <p class="muted">Source: GROWTHCURB_BOOKING_TOOLS.md (Sprint 6 booking tooling discovery).</p>
-</div></section>
-
-<section class="slide"><div class="wrap">
-  <h2>3) The Product — Full Service Stack</h2>
-  <div class="grid two">
-    <div class="card"><h3>Core engine</h3><ul><li>Conversion-first websites</li><li>Local SEO structure + map visibility</li><li>Review capture + trust loops</li><li>Order/booking conversion flows</li><li>Paid acquisition alignment</li></ul></div>
-    <div class="card"><h3>Operator promise</h3><ul><li>One accountable team, not fragmented vendors</li><li>Monthly optimization cadence</li><li>Metrics tied to calls/bookings/revenue</li><li>Flexible packaging by vertical and readiness</li></ul></div>
+    <div class="card"><h3>Full Service Stack</h3><ul><li>Websites (conversion-first)</li><li>Local SEO + map visibility</li><li>Ordering/booking integration</li><li>Review capture + trust loops</li><li>Paid growth alignment (ads + funnels)</li></ul></div>
+    <div class="card"><h3>Why clients buy</h3><ul><li>One accountable team</li><li>Operator-friendly execution cadence</li><li>Real KPI reporting tied to calls/bookings/revenue</li><li>Flexible pricing by stage and vertical</li></ul></div>
   </div>
 </div></section>
 
 <section class="slide"><div class="wrap">
-  <h2>4) The Market — North Fulton, GA</h2>
+  <h2>2) The Market — North Fulton, GA</h2>
   <div class="grid three">
-    <div class="card"><div class="metric">~285k</div><p>Population across Alpharetta, Roswell, Johns Creek, Milton</p></div>
-    <div class="card"><div class="metric">625–1075</div><p>Addressable businesses in initial service mix (home services + medspa + high-intent local verticals)</p></div>
-    <div class="card"><div class="metric">46%</div><p>Google searches with local intent (demand base we capture)</p></div>
+    <div class="card"><div class="metric">~285,000</div><p>Population (Alpharetta, Roswell, Johns Creek, Milton)</p></div>
+    <div class="card"><div class="metric">~2,390–3,155</div><p>Total businesses in target verticals</p></div>
+    <div class="card"><div class="metric">~625–1,075</div><p>Bad/no-site prospects (addressable market)</p></div>
   </div>
-  <p class="muted">Territory analysis + vertical density confirms immediate launch wedge with high buyer intent and strong unit economics.</p>
-</div></section>
-
-
-<section class="slide"><div class="wrap">
-  <h2>5) The Booking Problem (Real-World Proof)</h2>
-  <div class="grid two">
-    <div class="card">
-      <h3>Board-level reality</h3>
-      <p>"Your wife can't book her nail appointment online. Neither can your customers."</p>
-      <p class="muted">If booking is hard, intent dies. Buyers move to whoever makes it easy in two taps.</p>
-    </div>
-    <div class="card">
-      <h3>What this costs local businesses</h3>
-      <ul>
-        <li>46% of search demand is local intent</li>
-        <li>88% of local mobile searchers act within 24 hours</li>
-        <li>Without online booking/ordering, high-intent traffic leaks to competitors</li>
-      </ul>
-    </div>
-  </div>
-  <div class="card">
-    <h3>GrowthCurb fix</h3>
-    <p>Every GrowthCurb build includes conversion-ready booking integration (Square/Fresha/Booksy/Acuity), plus order/quote/call paths. We remove friction at the exact moment a buyer is ready.</p>
-  </div>
+  <p class="muted">Source: GROWTHCURB_TERRITORY_ANALYSIS.md</p>
 </div></section>
 
 <section class="slide"><div class="wrap">
-  <h2>6) Pricing Model — Base + Add-ons (Flexible)</h2>
+  <h2>3) Services + Pricing (Flexible Add-on Model)</h2>
   <table>
-    <tr><th>Component</th><th>Price</th><th>Role in Offer</th></tr>
-    <tr><td>Base Website</td><td>$49–$79/mo</td><td>Core web + conversion foundation</td></tr>
-    <tr><td>SEO Add-on</td><td>+$29/mo</td><td>Local discoverability & map intent capture</td></tr>
-    <tr><td>Ordering Add-on</td><td>+$39/mo</td><td>Direct transaction path</td></tr>
-    <tr><td>Reviews Add-on</td><td>+$19/mo</td><td>Trust growth loop</td></tr>
-    <tr><td>Ads Mgmt Add-on</td><td>+$99/mo</td><td>High-intent paid pipeline</td></tr>
+    <tr><th>Offer</th><th>Price</th><th>Purpose</th></tr>
+    <tr><td>Base Website</td><td>$49–$79/mo</td><td>Core conversion foundation</td></tr>
+    <tr><td>SEO Add-on</td><td>+$29/mo</td><td>Local discoverability</td></tr>
+    <tr><td>Ordering/Booking Add-on</td><td>+$39/mo</td><td>Immediate transaction capture</td></tr>
+    <tr><td>Review Add-on</td><td>+$19/mo</td><td>Trust compounding loop</td></tr>
+    <tr><td>Ads Mgmt Add-on</td><td>+$99/mo</td><td>Paid demand acceleration</td></tr>
   </table>
-  <p class="muted">Model blend used in financials: base $69 + weighted add-ons = <b>$135.78 ARPU</b> with blended gross margin <b>65.9%</b>.</p>
+  <p class="muted">Financial model blend: ARPU $135.78, blended gross margin 65.9%.</p>
 </div></section>
 
 <section class="slide"><div class="wrap">
-  <h2>7) Competitive Advantage (vs Thryv / Hibu / Scorpion)</h2>
-  <div class="grid three">
-    <div class="card"><h3>GrowthCurb</h3><p>Integrated, flexible stack with transparent pricing and local conversion focus.</p><span class="badge good">Position: agile + outcome-driven</span></div>
-    <div class="card"><h3>Legacy agencies</h3><p>Often expensive, slower cycles, and less flexible packaging for SMB operators.</p><span class="badge warn">Risk: cost + rigidity</span></div>
-    <div class="card"><h3>DIY tools</h3><p>Low software cost, high owner workload, inconsistent execution quality.</p><span class="badge warn">Risk: effort burden</span></div>
-  </div>
+  <h2>4) Live URLs (Everything Built)</h2>
+  <div class="card"><ul>
+    <li><a href="https://bradleventhal.github.io/growthcurb/" target="_blank">GrowthCurb Site</a></li>
+    <li><a href="https://bradleventhal.github.io/growthcurb-pitch/" target="_blank">GrowthCurb Pitch</a></li>
+    <li><a href="https://bradleventhal.github.io/growthcurb-crm/" target="_blank">GrowthCurb CRM</a></li>
+    <li><a href="https://bradleventhal.github.io/growthcurb-previews/" target="_blank">GrowthCurb Previews</a></li>
+    <li><a href="https://bradleventhal.github.io/growthcurb-portal/" target="_blank">GrowthCurb Portal</a></li>
+    <li><a href="https://growthcurb.vercel.app/" target="_blank">GrowthCurb App Surface</a></li>
+    <li><a href="https://github.com/bradleventhal/growthcurb-pitch" target="_blank">GrowthCurb Pitch Repo</a></li>
+    <li><a href="https://calendly.com/growthcurb/north-fulton-launch" target="_blank">Launch Booking Link</a></li>
+  </ul></div>
 </div></section>
 
 <section class="slide"><div class="wrap">
-  <h2>8) Financial Projections — Year 1 Scenarios</h2>
+  <h2>5) Financial Projections (Year 1)</h2>
   <table>
-    <tr><th>Scenario</th><th>Active Clients</th><th>MRR</th><th>Annualized Run-Rate</th></tr>
+    <tr><th>Scenario</th><th>Clients</th><th>MRR</th><th>Annualized Run-Rate</th></tr>
     <tr><td>Conservative</td><td>25</td><td>$15,075</td><td>$180,900</td></tr>
     <tr><td>Moderate</td><td>75</td><td>$46,025</td><td>$552,300</td></tr>
     <tr><td>Aggressive</td><td>150</td><td>$92,050</td><td>$1,104,600</td></tr>
   </table>
   <div class="grid two">
-    <div class="card"><h3>Unit Economics</h3><ul><li>Blended ARPU: <b>$135.78/mo</b></li><li>Blended COGS: <b>$46.30/mo</b></li><li>Blended gross profit/client: <b>$89.48/mo</b></li><li>Blended gross margin: <b>65.9%</b></li></ul></div>
-    <div class="card"><h3>Scale Readout</h3><ul><li>100 clients: <b>$13,578 MRR</b></li><li>500 clients: <b>$67,890 MRR</b></li><li>Aggressive Yr-1 endpoint: <b>$92,050 MRR</b></li><li>Annualized run-rate at aggressive: <b>$1,104,600</b></li></ul></div>
-  </div>
-  <p class="muted">Source: GROWTHCURB_REVENUE_SCENARIOS.md + GROWTHCURB_FINANCIALS_V3.md (ARPU/margin and scenario model).</p>
-</div></section>
-
-<section class="slide"><div class="wrap">
-  <h2>9) What’s Ready to Launch (Live Links)</h2>
-  <div class="grid two">
-    <div class="card"><ul>
-      <li><a href="https://bradleventhal.github.io/growthcurb/" target="_blank">GrowthCurb Site</a></li>
-      <li><a href="https://bradleventhal.github.io/growthcurb-pitch/" target="_blank">GrowthCurb Pitch</a></li>
-      <li><a href="https://github.com/bradleventhal/growthcurb-pitch" target="_blank">Pitch Repo</a></li>
-      <li><a href="https://bradleventhal.github.io/growthcurb-crm/" target="_blank">GrowthCurb CRM</a></li>
-      <li><a href="https://bradleventhal.github.io/growthcurb-previews/" target="_blank">GrowthCurb Previews</a></li>
-      <li><a href="https://bradleventhal.github.io/growthcurb-portal/" target="_blank">GrowthCurb Portal</a></li>
-      <li><a href="https://growthcurb.vercel.app/" target="_blank">Web App Surface</a></li>
-      <li><a href="https://calendly.com/growthcurb/north-fulton-launch" target="_blank">Launch Booking CTA</a></li>
-    </ul></div>
-    <div class="card"><p><b>Launch package status (Sprint 5+6 complete):</b></p><ul>
-      <li>Sales deck content complete</li>
-      <li>Social + email content complete</li>
-      <li>Case studies + one-pagers complete</li>
-      <li>Ops, onboarding, pricing, risk docs complete</li>
-    </ul></div>
+    <div class="card"><h3>Unit Economics</h3><ul><li>Blended ARPU: $135.78/mo</li><li>Blended COGS: $46.30/mo</li><li>Blended Gross Profit/client: $89.48/mo</li><li>Blended Margin: 65.9%</li></ul></div>
+    <div class="card"><h3>Scale Anchors</h3><ul><li>100 clients revenue: $13,578/mo</li><li>500 clients revenue: $67,890/mo</li><li>Moderate endpoint (75): $46,025 MRR</li><li>Aggressive endpoint (150): $92,050 MRR</li></ul></div>
   </div>
 </div></section>
 
 <section class="slide"><div class="wrap">
-  <h2>10) 90-Day Plan</h2>
+  <h2>6) Competitive Advantage</h2>
   <div class="grid three">
-    <div class="card"><h3>0–30 Days</h3><ul><li>Launch North Fulton outbound waves</li><li>Close first 10–15 logos</li><li>Operationalize weekly KPI cadence</li></ul></div>
-    <div class="card"><h3>31–60 Days</h3><ul><li>Scale winning vertical offers</li><li>Tighten fulfillment SLAs</li><li>Increase review and referral loops</li></ul></div>
-    <div class="card"><h3>61–90 Days</h3><ul><li>Expand to adjacent micro-territories</li><li>Add specialist pods for throughput</li><li>Push toward moderate scenario trajectory</li></ul></div>
+    <div class="card"><h3>vs Thryv</h3><p>GrowthCurb is lighter-weight to adopt, faster to execute, and conversion-focused for local operators.</p></div>
+    <div class="card"><h3>vs Hibu</h3><p>GrowthCurb offers clearer pricing and tighter operator visibility with sprint-style optimization.</p></div>
+    <div class="card"><h3>vs Scorpion</h3><p>GrowthCurb emphasizes practical, modular add-ons with board-visible performance loops.</p></div>
   </div>
 </div></section>
 
 <section class="slide"><div class="wrap">
-  <h2>11) Risks + Mitigations</h2>
+  <h2>7) 90-Day Launch Plan</h2>
+  <div class="grid three">
+    <div class="card"><h3>Days 1–30</h3><ul><li>North Fulton wave launch</li><li>10–15 logos target</li><li>Weekly KPI cadence live</li></ul></div>
+    <div class="card"><h3>Days 31–60</h3><ul><li>Scale winning verticals</li><li>Tighten delivery SLA</li><li>Increase review/referral loops</li></ul></div>
+    <div class="card"><h3>Days 61–90</h3><ul><li>Expand to adjacent territories</li><li>Add specialist pods</li><li>Push toward moderate scenario line</li></ul></div>
+  </div>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>8) Risks + Mitigations</h2>
   <table>
-    <tr><th>Risk</th><th>Impact</th><th>Mitigation</th></tr>
-    <tr><td>Lead quality variance</td><td>Unstable close rates</td><td>Tighter ICP scoring + vertical prioritization</td></tr>
-    <tr><td>Fulfillment bottlenecks</td><td>Churn/reputation risk</td><td>Pod staffing model + SLA controls</td></tr>
-    <tr><td>Overreliance on one channel</td><td>Pipeline volatility</td><td>Balanced SEO + paid + referral motion</td></tr>
-    <tr><td>Pricing pressure</td><td>Margin compression</td><td>Add-on attach strategy + premium outcomes positioning</td></tr>
+    <tr><th>Risk</th><th>Mitigation</th></tr>
+    <tr><td>Lead quality variance</td><td>Tighter ICP scoring and vertical prioritization</td></tr>
+    <tr><td>Fulfillment bottlenecks</td><td>Pod staffing model + SLA controls</td></tr>
+    <tr><td>Channel volatility</td><td>Balanced SEO + paid + referral pipeline</td></tr>
+    <tr><td>Pricing pressure</td><td>Add-on attach strategy + premium outcome positioning</td></tr>
   </table>
 </div></section>
 
 <section class="slide"><div class="wrap">
-  <h2>12) The Team — 20-Agent Operating Company</h2>
-  <div class="grid two">
-    <div class="card"><ul>
-      <li><b>LeBron:</b> orchestration + executive routing</li>
-      <li><b>Magic:</b> board comms + final packaging</li>
-      <li><b>McVay:</b> strategy + viability calls</li>
-      <li><b>Marino:</b> sales strategy + outbound</li>
-      <li><b>Jokic:</b> research + market intelligence</li>
-      <li><b>Steph:</b> product system design</li>
-      <li><b>Elon:</b> technical architecture</li>
-      <li><b>Ohtani:</b> integrations + automation</li>
-      <li><b>Achane:</b> workflow optimization</li>
-      <li><b>JJettas:</b> financial analytics</li>
-    </ul></div>
-    <div class="card"><ul>
-      <li><b>Brady:</b> QA gate authority</li>
-      <li><b>Wade:</b> second-eyes review</li>
-      <li><b>Saban:</b> lessons propagation</li>
-      <li><b>Mahomes:</b> campaign execution support</li>
-      <li><b>Jimmy:</b> conversion copy + offer messaging</li>
-      <li><b>Kobe:</b> performance standards oversight</li>
-      <li><b>Shaq:</b> stress-test review</li>
-      <li><b>Duncan:</b> process stability support</li>
-      <li><b>Jordan:</b> positioning rigor support</li>
-      <li><b>Bird:</b> narrative refinement support</li>
-    </ul></div>
+  <h2>PART 2 — How The Company Built It</h2>
+  <div class="grid three">
+    <div class="card"><div class="metric">20</div><p>AI agents executing in parallel lanes</p></div>
+    <div class="card"><div class="metric">8+</div><p>Sprint cycles completed in one day</p></div>
+    <div class="card"><div class="metric">250+</div><p>Total Linear issues created for visibility and control</p></div>
   </div>
 </div></section>
 
 <section class="slide"><div class="wrap">
-  <h2>13) Next Steps — Board Decisions Needed Tonight</h2>
-  <div class="grid three">
-    <div class="card"><h3>Decision 1</h3><p>Approve North Fulton launch budget + channel mix for first 90 days.</p></div>
-    <div class="card"><h3>Decision 2</h3><p>Lock pricing architecture (base + add-on model) for go-live.</p></div>
-    <div class="card"><h3>Decision 3</h3><p>Authorize pod hiring plan tied to scenario milestones.</p></div>
+  <h2>9) Problems We Hit — And How We Fixed Them</h2>
+  <table>
+    <tr><th>Issue</th><th>Fix Applied</th></tr>
+    <tr><td>Linear wasn’t updating</td><td>Standardized create/update/comment protocol per task with enforced completion writes</td></tr>
+    <tr><td>Saban wasn’t writing lessons</td><td>Mandatory QA-event lesson capture routing restored and audited</td></tr>
+    <tr><td>Sites looked like AI slop</td><td>Template quality bar + design polish passes + board-facing rewrite standards</td></tr>
+    <tr><td>Wrong agent routing</td><td>Chain dispatch discipline + explicit ownership and handoff schema</td></tr>
+    <tr><td>Heartbeat broke chat flow</td><td>Heartbeat response guardrails + alert-only interruption mode enforced</td></tr>
+    <tr><td>Vercel was dead</td><td>Fallback to GitHub Pages delivery path for continuity</td></tr>
+    <tr><td>ESPN data stale</td><td>Source freshness checks and evidence-status labeling before publishing claims</td></tr>
+  </table>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>10) Dispatch Wrapper + QA Learning Loop</h2>
+  <div class="grid two">
+    <div class="card"><h3>Dispatch wrapper solution</h3><ul><li>Consistent task packet format</li><li>START/FINISH visibility in group</li><li>Deterministic handoff chain</li><li>Reduced routing ambiguity and dropped work</li></ul></div>
+    <div class="card"><h3>Machine learning from failure</h3><ul><li>Every FAIL/PASS event generates lessons</li><li>Saban propagates durable behavior changes</li><li>Next sprint quality improves by default</li><li>QA loops catch real issues before Brad-facing delivery</li></ul></div>
   </div>
-  <p class="muted">If approved tonight, GrowthCurb enters execution mode immediately with weekly board-visible KPI reporting.</p>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>11) The Nail Salon Insight (Board Signal)</h2>
+  <div class="card">
+    <p><b>“Your wife can't book her nail appointment online. Neither can your customers.”</b></p>
+    <p class="muted">This framed the booking-conversion gap in one sentence. It turned an abstract UX issue into immediate revenue logic and drove booking-integration priority in the stack.</p>
+  </div>
+</div></section>
+
+<section class="slide"><div class="wrap">
+  <h2>12) What Brad Needs to Decide Tonight</h2>
+  <div class="grid three">
+    <div class="card"><h3>Decision 1</h3><p>Approve launch budget + channel mix for first 90 days.</p></div>
+    <div class="card"><h3>Decision 2</h3><p>Lock pricing architecture and add-on packaging for go-live.</p></div>
+    <div class="card"><h3>Decision 3</h3><p>Approve staffing/pod ramp tied to scenario milestones.</p></div>
+  </div>
+  <p class="muted">If approved at 10pm, execution proceeds immediately with Brady QA gate and weekly board-visible KPI reporting.</p>
 </div></section>
 
 </div>
-<div class="footer">GrowthCurb Board Deck • March 15, 2026</div>
+<div class="footer">GrowthCurb Final Board Deck • 10:00 PM ET</div>
 </body>
 </html>
